@@ -54,6 +54,7 @@ function exportOrgChartPdf({ loadConfig }) {
   canvas1.id = 'canvas1'
   canvas1.width = svgWidth * ratio
   canvas1.height = svgHeight * ratio
+  console.log('canvas dimentions: height: '+canvas1.height+', width '+canvas1.width)
   document.getElementById(`${id}-canvas-container`).appendChild(canvas1)
 
   // creating duplicate org chart svg from original org chart svg
